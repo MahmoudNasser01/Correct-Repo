@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.clear{
+    clear: both;
+}
+.wrapper{
+    font-family: sans-serif;
+}
+.container{
+  width:90%;
+    margin:0 auto;
+  
+}
+.subheader{
+    width:100%;
+    height:30px;
+    background:#4834d4;
+}
+.subheader p {
+    float:left;
+    color:#fff;
+    margin:0;
+}
+.subheader a {
+    float:right;
+    line-height: 30px;
+    text-decoration: none;
+    color:#fff;
+    margin:0 9px;
+}
+/*Our main header*/
+.main-header{
+    width:100%;
+    height:100px;
+    background:#9980fa;
+ float:left;
+}
+.logo{
+    float:left;
+    width:250px;
+    margin-top:10px;
+}
+.bird{
+    color:#000;
+    font-weight:bold;
+    font-size:55px;
+    font-family:cursive;
+    margin-left:20px;
+}
+.logo-shop{
+    color:#f5f5f5;
+    font-weight:bold;
+    font-size:30;
+    font-family:cursive;
+}
+/*start search area*/
+.search{
+    width:650px;
+    float:left;
+    padding:20px;
+    margin-left: 50px;
+}
+.search-area{
+    width:600px;
+    height:50px;
+    border:0;
+    outline: none;
+    background:#fff;
+    border-radius: 9px;
+    float:left;
+    padding-left:20px;
+}
+.search-area::placeholder{
+    font-size:20px;
+    color:#777;
+    font-weight:500;
+}
+.search-btn{
+    width:90px;
+    height:50px;
+    border-radius: 9px;
+    border:none;
+    display:inline;
+    float:left;
+    margin-left:-90px;
+    color:#fff;
+    background:#74b9ff;
+    font-weight:600;
+}
+.user-menu{
+    width:300px;
+    float:right;
+    margin-top:20px;
+}
+.user-menu li{
+    float:left;
+    width:140px;
+    list-style: none;
+    margin-top:10px;
+    text-align: center;
+    font-size:25px;
+    border-left:2px solid #000;
+        text-decoration: none;
+}
+.user-menu li a{
+text-decoration: none;
+    color:#fff;
+    
+}
+.user-menu li:hover{
+   font-size:30px;
+    transition: all 0.6s ease;
+}
+nav{
+    width:100%;
+    height:35px;
+    background-color:#4834d4;
+    float:left;
+    text-align: center;
+    margin:auto;
+    box-shadow: 10px 14px 50px 2px #4834d4;
+}
+nav a{
+    margin:9px 40px 0 30px ;
+    text-decoration: none;
+    color:#fff;
+    font-weight:bold;
+    font-size:20px;
+}
+nav a:hover{
+    color:#333;
+    font-size:1.2em;
+    transition: all 0.4s ease-in-out;
+}
+.bunner img{
+    width:100%;
+    height:400px;
+    margin-top:70px;
+}
+ .h-cat{
+    font-size:50px;
+    color:#333;
+    width:30%;
+    border-left:20px solid #4834d4;
+    margin-top:0;
+    padding-left:9px;
+}
+.bounce {
+  animation:bounce 2s ease infinite;
+  transform-origin: center bottom;
+}
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+.catbox{
+    width:100%;
+    height:490px;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+  
+}
+.catbox img{
+    width:auto;
+    height:auto;
+overflow: hidden;
+}
+[class^="imghvr-"] figcaption, [class*=" imghvr-"] figcaption{
+    background-color: rgba(0,145,215,0.6); 
+}
+figcaption h1{
+    color:#fff;
+    font-size:70px;
+    margin-top:60px;
+    padding-left:9px;
+}
+figcaption button{
+    margin:150px 50px 0;
+    width:200px;
+    height:50px;
+    background:transparent;
+    color:#fff;
+    font-size:25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border:2px solid rgba(0,145,215,0.7);
+}
+.hotproduct{
+    width:100%;
+    height:auto;
+    margin-top:50px;
+}
+.hotproduct .product-raw1{
+    width:100%;
+    height:auto;
+    display: flex;
+}
+.hotproduct .product-raw1 img{
+    width:50%;
+    height:700px;
+}
+.hotproduct h1{
+        font-size:50px;
+    color:#333;
+    width:30%;
+    border-left:20px solid #4834d4;
+    margin-top:0;
+    padding-left:9px;
+}
+span.hot-sign{
+    position: absolute;
+    left:50%;
+    color:#fff;
+    background: red;
+    font-size: 20px;
+    font-weight:bolder;
+}
+.layer{
+    position:absolute;
+    left:0%;
+    height:700px;
+    width:0%;
+    background-color:rgba(0,145,215,0.7);
+    transition: all 0.8s ease;
+}
+img.left-img:hover .layer{
+width:50%;
+}
+
+
+
